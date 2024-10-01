@@ -100,3 +100,16 @@ function ej6(nom, preu, quantitat){
     // Exemple de sortida: { nom: "Portàtil", preu: 950, quantitat: 3 }
     return producte;
 }
+
+function ej7(){
+    const cotxe = {
+        marca: 'Tesla',
+        model: 'Model S',
+        preu: 80000
+    };
+    // Afegeix la propietat 'any' aquí
+    cotxe.any = 2023
+
+    // Imprimeix l'objecte actualitzat
+    console.log(cotxe)
+}
