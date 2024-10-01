@@ -30,6 +30,41 @@ function ej1(){
     */
 
     // Imprimeix: "Joan té 20 anys i ha tret un 8 en matemàtiques."
-    console.log(`${estudiant.nom} te ${estudiant.edat} anys i ha tret un ${estudiant.notes.matematiques} en matematiques`)    
+    console.log(`${estudiant.nom} te ${estudiant.edat} anys i ha tret un ${estudiant.notes.matematiques} en matematiques`)
+}
+
+function ej2(){
+    const coordenades = [12, 5, 8];
+
+
+    // Desestructura l'array aquí
+    const[x, y, z] = [12, 5, 8]
+    console.log(x)
+    console.log(y)
+    console.log(z)
+
+    // Imprimeix les coordenades: "Les coordenades són x=12, y=5, z=8."
+    console.log(`Les coordenades son x=${x} y=${y} z=${z}.`);
+}
+
+
+function ej3(){
+    const preus = [100, 200, 300, 400];
+
+
+    // Aplica el mètode map per incrementar els preus en un 10%
+    const incremento = preus.map(preu => preu * 1.10)
+
+    
+    // Imprimeix el nou array de preus
+    console.log(incremento)
+}
+
+function ej4(){
+    const edats = [16, 21, 18, 24, 12, 30];
+
+    // Utilitza el mètode filter per obtenir les edats majors de 18
+    // Imprimeix el nou array
+    
 
 }
