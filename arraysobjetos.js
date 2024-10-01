@@ -33,6 +33,7 @@ function ej1(){
     console.log(`${estudiant.nom} te ${estudiant.edat} anys i ha tret un ${estudiant.notes.matematiques} en matematiques`)
 }
 
+
 function ej2(){
     const coordenades = [12, 5, 8];
 
@@ -60,11 +61,42 @@ function ej3(){
     console.log(incremento)
 }
 
+
 function ej4(){
     const edats = [16, 21, 18, 24, 12, 30];
 
     // Utilitza el mètode filter per obtenir les edats majors de 18
-    // Imprimeix el nou array
+    const edadesNuevas = edats.filter(edat => edat > 18)
     
+    // Imprimeix el nou array
+    console.log(edadesNuevas)
+}
 
+
+function ej5(){
+    const notes = [7, 9, 5, 10, 8];
+
+    // Utilitza reduce per calcular la mitjana
+    const media = notes.reduce(nota => (7+9+5+10+8)/5)
+
+    // Imprimeix el resultat
+    console.log(media)
+}
+
+
+// Escriu la funció per crear l'objecte producte
+function ej6(nom, preu, quantitat){
+
+    const descuento = preu * 0.95
+
+    const producte = {
+        nom: nom,
+        preu: descuento,
+        quantitat: quantitat
+    };
+
+    console.log(producte)
+
+    // Exemple de sortida: { nom: "Portàtil", preu: 950, quantitat: 3 }
+    return producte;
 }
